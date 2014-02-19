@@ -3,9 +3,11 @@
   email = im.mmun@gmail.com
 [core]
   excludesfile = ~/.gitignore
+  editor = /usr/bin/vim
 [push]
   default = tracking
 [alias]
+  pr = "!f() { git fetch origin refs/pull/$1/head:pr/$1; } ; f"
   co = checkout
   ci = commit
   st = status
